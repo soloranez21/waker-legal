@@ -64,3 +64,7 @@ footer {
   font-size: 14px;
 }
 footer a { color: var(--ink-secondary); }
+
+/* German compound headings must fit compact phones. */
+html[lang="de"] h1 { overflow-wrap: anywhere; hyphens: auto; }
+html[lang="de"] a:not(.brand):not(.cta) { color: #9b3a00; }

@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Waker — Privacy Policy</title>
 <link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://soloranez21.github.io/waker-legal/privacy/">
+<link rel="alternate" hreflang="en" href="https://soloranez21.github.io/waker-legal/privacy/">
+<link rel="alternate" hreflang="de" href="https://soloranez21.github.io/waker-legal/de/privacy/">
 </head>
 <body>
 <main>
+  <p><a href="../de/privacy/" lang="de">Deutsch</a></p>
   <a class="brand" href="../"><span class="dot"></span>Waker</a>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: September 7, 2026</p>
+  <p class="meta">Last updated: October 7, 2026</p>
 
   <p>Waker is an alarm app that verifies your morning mission with your iPhone's
   camera. It is built to know as little about you as possible.</p>
@@ -18,70 +22,157 @@
   <h2>The short version</h2>
   <div class="card">
     <ul>
-      <li><strong>Your camera data never leaves your iPhone.</strong> Mission verification runs entirely
-        on-device. No photo, video, or depth data is ever recorded, stored, or uploaded —
-        frames are processed in memory and immediately discarded.</li>
-      <li><strong>No accounts.</strong> There is nothing to sign up for and no account to delete.</li>
-      <li><strong>The alarm works offline.</strong> Scheduling, ringing, missions, streaks, and the
-        escape hatch make zero network calls.</li>
-      <li><strong>We don't track you.</strong> No advertising identifiers, no cross-app tracking, no
-        data sales. Ever.</li>
+      <li><strong>Your camera data never leaves your iPhone.</strong> Missions are checked on your
+        device by Apple's Vision framework. Frames are analyzed in memory and then
+        discarded; no photo, video, or depth data is ever recorded, stored, or uploaded.</li>
+      <li><strong>No accounts and no Waker server.</strong> There is nothing to sign up for.</li>
+      <li><strong>Alarms and missions work offline.</strong> Waker uses the internet only for
+        subscriptions, through our subscription provider Superwall and Apple's App Store,
+        and for anonymous analytics while you go through setup (PostHog).</li>
+      <li><strong>No advertising and no tracking.</strong> No ads, no advertising identifier, no
+        cross-app tracking, and no data sales. Waker never asks for tracking permission.</li>
     </ul>
   </div>
 
-  <h2>Data stored on your device</h2>
-  <p>Alarm settings, mission history, streaks, and escape-pass usage are stored locally
-  on your iPhone (and in your device backups, which Apple encrypts per your iCloud
-  settings). Deleting the app deletes this local data. The limited paywall
-  personalization details described below are also processed by Superwall.</p>
+  <h2>Who is responsible</h2>
+  <p>Aleksandr Saliukov, an individual developer, is responsible for Waker ("we", "us").</p>
+  <p>Goeschlgasse 3, 1030 Vienna, Austria</p>
+  <p>Email: <a href="mailto:support@glaw.app">support@glaw.app</a></p>
 
-  <h2>Data processed by third parties</h2>
-  <p><strong>Purchases (Superwall + Apple).</strong> Our subscription paywall is powered by
-  Superwall, and payments are handled by Apple's App Store. When you view the paywall
-  or purchase, Superwall receives standard purchase and paywall-interaction events
-  tied to a device-level identifier (Apple's "identifier for vendor"). We have no
-  accounts, so there is no email or account identity to send.</p>
-  <p><strong>Paywall personalization.</strong> If you gave a first name during setup, we send it to
-  Superwall for personalized paywall messaging. When a paywall is shown, we also
-  send your selected morning goal and preferred morning activity, if provided.
-  The onboarding paywall can additionally receive your planned wake-up time and
-  chosen mission type. These choices help the paywall show the morning plan you
-  selected; they may also appear in Superwall's paywall and placement analytics,
-  linked to the same device-level identifier.</p>
-  <p>We do not send your age range, sleep-habit answers, feelings, snooze history,
-  owned-object list, or actual mission results for this personalization. We do not
-  send camera images, video, depth, or movement data. Choosing “I’m not sure yet”
-  uses general goal messaging; it does not infer a goal for you.</p>
-  <p>This is used to personalize and operate the paywall and measure it, not for
-  cross-app advertising or data sales. See Superwall's
-  privacy policy (<a href="https://superwall.com/privacy">superwall.com/privacy</a>) and Apple's
-  (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>).</p>
-  <p>Apple processes your payment; we never see your payment details.</p>
+  <h2>Data that stays on your iPhone</h2>
+  <p>Apart from the subscription data and the anonymous setup analytics described
+  below, everything Waker knows about you stays on your iPhone:</p>
+  <ul>
+    <li>camera frames, which are analyzed in memory and then discarded;</li>
+    <li>alarm settings, including wake-up times and the objects you pick for the object mission;</li>
+    <li>mission history, results, and progress statistics;</li>
+    <li>your setup answers, such as your sleep habits (only an anonymous code for each
+      option you pick goes to setup analytics, described below);</li>
+    <li>sounds you import and preferences such as your language.</li>
+  </ul>
+  <p>The signature you draw during setup is only shown on screen and is never stored.
+  Data on your iPhone can also be part of your device backups, which Apple encrypts
+  according to your iCloud settings. Deleting the app deletes its data from your iPhone.</p>
+
+  <h2>Data sent to Superwall for subscriptions</h2>
+  <p>Superwall, Inc. (USA) runs our subscription screens and purchase handling as our
+  service provider (processor). Waker contacts Superwall only for subscription
+  features, for example when it shows a subscription screen or when you buy or
+  restore a subscription. Superwall then receives:</p>
+  <ul>
+    <li><strong>Your first name</strong>, if you entered one during setup. It is optional; you can skip it.</li>
+    <li><strong>The morning goal, morning activity, and mission type you selected during setup.</strong>
+      They personalize the subscription screen and the follow-up offer shown if you
+      cancel a purchase. Superwall stores them as user attributes.</li>
+    <li><strong>Identifiers:</strong> a random user ID created by Superwall and Apple's identifier
+      for vendor (IDFV).</li>
+    <li><strong>Device and app information</strong>, such as device model, iOS version, app version,
+      language, region and locale, time zone, screen and text-size settings, network
+      type, and the IP address that every internet request reveals.</li>
+    <li><strong>Subscription activity:</strong> how you use subscription screens (for example views,
+      purchase starts, cancellations and completions, and restores), basic app-session
+      events such as app opens while the subscription service is running, and your
+      subscription status and purchase history.</li>
+  </ul>
+  <p>We use this data to show and personalize subscription offers, process and restore
+  purchases, keep your access in sync, and measure which subscription screens work.
+  Superwall's install-attribution matching, which links app installs to ads, is
+  switched off in Waker.</p>
+  <p>We never send Superwall your camera images, video, depth, or movement data, your
+  signature, your sleep-habit answers, your wake-up times, or your mission results.
+  See Superwall's privacy policy (<a href="https://superwall.com/privacy">superwall.com/privacy</a>).</p>
+
+  <h2>Anonymous setup analytics (PostHog)</h2>
+  <p>While you go through Waker's first-time setup, Waker sends anonymous usage events to
+  PostHog Inc. (USA), our analytics provider (processor), so we can see which setup
+  screens help and where people stop. PostHog stores this data in its EU cloud in
+  Frankfurt, Germany. Analytics run only on the setup screens and stop for good when
+  setup is finished. Alarms, missions, and the rest of the app never send analytics.</p>
+  <p>PostHog receives:</p>
+  <ul>
+    <li><strong>Setup events:</strong> which setup screen you viewed, whether you moved forward or
+      back, how many seconds you spent on it, the option you picked for each setup
+      question (as a code, for example "four alarms" or "coffee"), whether you entered
+      a name (yes or no only, never the name itself), when you signed, when you left or
+      returned to the app, and when setup was finished.</li>
+    <li><strong>A random analytics ID</strong> that Waker creates on your iPhone. It is not Apple's
+      advertising identifier or identifier for vendor, and it is not shared with Superwall.</li>
+    <li><strong>Device and app information</strong>, such as device model, iOS version, app version,
+      app language, region, time zone, screen size, and network type.</li>
+  </ul>
+  <p>PostHog does not store your IP address or work out your location from it, and no
+  profile about you is created. We never send PostHog your name, your signature,
+  camera data, wake-up times, mission results, or purchases.</p>
+
+  <h2>Purchases through Apple</h2>
+  <p>Apple processes your purchase and payment through the App Store under Apple's own
+  terms and privacy policy (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>). We never see your payment details.</p>
+
+  <h2>Why we use this data (legal bases)</h2>
+  <ul>
+    <li><strong>To provide Waker</strong> — the app, your subscription, purchases and restores, and
+      the personalization you ask for by answering setup questions: performance of our
+      contract with you (Art. 6(1)(b) GDPR).</li>
+    <li><strong>To measure subscription screens and keep the service secure:</strong> our legitimate
+      interest in understanding which screens work and in preventing misuse
+      (Art. 6(1)(f) GDPR). You can object at any time.</li>
+    <li><strong>To improve setup with anonymous analytics:</strong> our legitimate interest in
+      understanding which setup screens help people and where they stop
+      (Art. 6(1)(f) GDPR). You can object at any time by email.</li>
+  </ul>
+  <p>Your first name is optional; you can skip it.</p>
+
+  <h2>How long we keep data</h2>
+  <ul>
+    <li>Data on your iPhone stays there until you delete it or the app.</li>
+    <li>Superwall keeps data only as long as needed for these purposes and then deletes
+      it under its retention rules. You can ask us at any time to have your data deleted.</li>
+    <li>PostHog keeps setup analytics for up to 12 months and then deletes them.</li>
+    <li>Apple keeps purchase records under its own policies.</li>
+  </ul>
+
+  <h2>Where data is processed</h2>
+  <p>Superwall processes data in the USA. PostHog stores setup analytics in the EU
+  (Frankfurt, Germany); PostHog Inc. is based in the USA. Any transfers to the USA
+  rely on the EU Standard Contractual Clauses or another transfer mechanism permitted
+  under the GDPR, such as the EU-U.S. Data Privacy Framework where the recipient is
+  certified.</p>
+
+  <h2>Your rights</h2>
+  <p>You have the right to access your data, to have it corrected or deleted, to
+  restrict its processing, to receive it in a portable format, and to object to its
+  processing — in particular processing based on our legitimate interests. To use
+  these rights, email us. Because Waker has no accounts, we may need a few details
+  to find the data that belongs to you. Setup analytics are not linked to your name
+  or an account, so we may not be able to tell which events are yours.</p>
+  <p>You can also complain to a data-protection supervisory authority — in Germany, for
+  example, the authority of your federal state; in Austria, the <span lang="de">Datenschutzbehörde</span>.</p>
 
   <h2>Permissions we ask for and why</h2>
   <ul>
     <li><strong>Alarms (AlarmKit):</strong> to schedule and ring your wake-up alarms, including the
-      backup alarms that re-ring until your morning mission is done.</li>
-    <li><strong>Notifications:</strong> for the late backup nudges if you keep skipping the mission.</li>
-    <li><strong>Camera:</strong> to run the wake-up mission — counting pushups, squats or a plank
-      hold, recognising the household object you were sent to find, or verifying visible
-      brushing-like hand-at-mouth motion. On-device only, as above.</li>
+      backup alarms that ring again until your morning mission is done.</li>
+    <li><strong>Notifications:</strong> for backup reminders if you keep skipping the mission.</li>
+    <li><strong>Camera:</strong> to run the wake-up mission — counting push-ups and squats, timing a
+      plank hold, recognizing the household object you were sent to find, or checking
+      visible brushing-like motion at your mouth. On-device only, as above.</li>
   </ul>
-  <p>You can revoke any of these in Settings at any time; the app will tell you what
+  <p>You can revoke any of these in iOS Settings at any time; the app tells you what
   stops working.</p>
 
   <h2>Children</h2>
-  <p>Waker is not directed at children under 13.</p>
+  <p>Waker is not directed at children and is not intended for anyone under 16. In
+  Germany and Austria, parental consent rules apply to younger users.</p>
 
   <h2>Changes</h2>
-  <p>If this policy changes materially, the date above changes and the new version is
-  published at the same URL before it takes effect.</p>
+  <p>If this policy changes materially, we update the date above and publish the new
+  version at the same URL before it takes effect.</p>
 
   <h2>Contact</h2>
-  <p>Questions: <a href="mailto:support@glaw.app">support@glaw.app</a></p>
+  <p>Questions and privacy requests: <a href="mailto:support@glaw.app">support@glaw.app</a></p>
 </main>
 <footer>
-  <p>Waker · <a href="../terms/">Terms of Use</a> · <a href="./">Privacy Policy</a></p>
+  <p>Waker · <a href="../terms/">Terms of Use</a> · <a href="./">Privacy Policy</a> · <a href="../de/impressum/" lang="de">Impressum</a></p>
 </footer>
 </body>
 </html>
