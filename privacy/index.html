@@ -14,7 +14,7 @@
   <p><a href="../de/privacy/" lang="de">Deutsch</a></p>
   <a class="brand" href="../"><span class="dot"></span>Waker</a>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: October 8, 2026</p>
+  <p class="meta">Last updated: October 13, 2026</p>
 
   <p>Waker is an alarm app that verifies your morning mission with your iPhone's
   camera. It is built to know as little about you as possible.</p>
@@ -28,7 +28,8 @@
       <li><strong>No accounts and no Waker server.</strong> There is nothing to sign up for.</li>
       <li><strong>Alarms and missions work offline.</strong> Waker uses the internet only for
         subscriptions, through our subscription provider Superwall and Apple's App Store,
-        and for anonymous analytics while you go through setup (PostHog).</li>
+        and, if you agree on the first setup screen, for setup statistics while you go
+        through setup (PostHog).</li>
       <li><strong>No advertising and no tracking.</strong> No ads, no advertising identifier, no
         cross-app tracking, and no data sales. Waker never asks for tracking permission.</li>
     </ul>
@@ -40,14 +41,14 @@
   <p>Email: <a href="mailto:support@glaw.app">support@glaw.app</a></p>
 
   <h2>Data that stays on your iPhone</h2>
-  <p>Apart from the subscription data and the anonymous setup analytics described
-  below, everything Waker knows about you stays on your iPhone:</p>
+  <p>Apart from the subscription data and the setup statistics described below,
+  everything Waker knows about you stays on your iPhone:</p>
   <ul>
     <li>camera frames, which are analyzed in memory and then discarded;</li>
     <li>alarm settings, including wake-up times and the objects you pick for the object mission;</li>
     <li>mission history, results, and progress statistics;</li>
-    <li>your setup answers, such as your sleep habits (only an anonymous code for each
-      option you pick goes to setup analytics, described below);</li>
+    <li>your setup answers, such as your sleep habits (if you share setup statistics,
+      only a code for each option you pick goes to PostHog, described below);</li>
     <li>sounds you import and preferences such as your language.</li>
   </ul>
   <p>The signature you draw during setup is only shown on screen and is never stored.
@@ -68,7 +69,9 @@
       for vendor (IDFV).</li>
     <li><strong>Device and app information</strong>, such as device model, iOS version, app version,
       language, region and locale, time zone, screen and text-size settings, network
-      type, and the IP address that every internet request reveals.</li>
+      type, and the IP address that every internet request reveals. Superwall also
+      estimates your approximate location (city, region and country) from the IP
+      address and stores it with this information.</li>
     <li><strong>Subscription activity:</strong> how you use subscription screens (for example views,
       purchase starts, cancellations and completions, and restores), basic app-session
       events such as app opens while the subscription service is running, and your
@@ -82,12 +85,14 @@
   signature, your sleep-habit answers, your wake-up times, or your mission results.
   See Superwall's privacy policy (<a href="https://superwall.com/privacy">superwall.com/privacy</a>).</p>
 
-  <h2>Anonymous setup analytics (PostHog)</h2>
-  <p>While you go through Waker's first-time setup, Waker sends anonymous usage events to
-  PostHog Inc. (USA), our analytics provider (processor), so we can see which setup
-  screens help and where people stop. PostHog stores this data in its EU cloud in
-  Frankfurt, Germany. Analytics run only on the setup screens and stop for good when
-  setup is finished. Alarms, missions, and the rest of the app never send analytics.</p>
+  <h2>Setup statistics (PostHog)</h2>
+  <p>The first setup screen says: "By continuing, you share setup statistics, never your
+  name." If you continue, Waker sends pseudonymous usage events to PostHog Inc. (USA),
+  our analytics provider (processor), so we can see which setup screens help and where
+  people stop. If you tap "Don't share" there, nothing is sent, and nothing leaves your
+  iPhone before you continue. PostHog stores this data in its EU cloud in Frankfurt,
+  Germany. Setup statistics run only on the setup screens and stop for good when setup
+  is finished. Alarms, missions, and the rest of the app never send analytics.</p>
   <p>PostHog receives:</p>
   <ul>
     <li><strong>Setup events:</strong> which setup screen you viewed, whether you moved forward or
@@ -102,7 +107,8 @@
   </ul>
   <p>PostHog does not store your IP address or work out your location from it, and no
   profile about you is created. We never send PostHog your name, your signature,
-  camera data, wake-up times, mission results, or purchases.</p>
+  camera data, wake-up times, mission results, or purchase details (PostHog only sees
+  that you moved past the subscription screen).</p>
 
   <h2>Purchases through Apple</h2>
   <p>Apple processes your purchase and payment through the App Store under Apple's own
@@ -116,11 +122,16 @@
     <li><strong>To measure subscription screens and keep the service secure:</strong> our legitimate
       interest in understanding which screens work and in preventing misuse
       (Art. 6(1)(f) GDPR). You can object at any time.</li>
-    <li><strong>To improve setup with anonymous analytics:</strong> our legitimate interest in
+    <li><strong>To improve setup with setup statistics:</strong> our legitimate interest in
       understanding which setup screens help people and where they stop
-      (Art. 6(1)(f) GDPR). You can object at any time by email.</li>
+      (Art. 6(1)(f) GDPR). They are only sent after you have seen the notice on the
+      first setup screen and continued; tap "Don't share" there to refuse.</li>
   </ul>
-  <p>Your first name is optional; you can skip it.</p>
+  <p>Your first name is optional; you can skip it. The name screen says that it is
+  also shown on the subscription screen through Superwall.</p>
+  <p><strong>Right to object.</strong> You can object at any time to processing based on our
+  legitimate interests (Art. 21 GDPR). For setup statistics, tap "Don't share" on the
+  first setup screen; for anything else, or afterwards, email us and we stop.</p>
 
   <h2>How long we keep data</h2>
   <ul>
@@ -145,7 +156,7 @@
   restrict its processing, to receive it in a portable format, and to object to its
   processing — in particular processing based on our legitimate interests. To use
   these rights, email us. Because Waker has no accounts, we may need a few details
-  to find the data that belongs to you. Setup analytics are not linked to your name
+  to find the data that belongs to you. Setup statistics are not linked to your name
   or an account, so we may not be able to tell which events are yours.</p>
   <p>You can also complain to a data-protection supervisory authority — in Germany, for
   example, the authority of your federal state; in Austria, the <span lang="de">Datenschutzbehörde</span>.</p>
@@ -163,8 +174,9 @@
   stops working.</p>
 
   <h2>Children</h2>
-  <p>Waker is not directed at children and is not intended for anyone under 16. In
-  Germany and Austria, parental consent rules apply to younger users.</p>
+  <p>Waker is not directed at children. We do not knowingly collect personal data from
+  children under 16 (under 14 in Austria). If you believe a child entered their name,
+  email us and we will have it deleted.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes materially, we update the date above and publish the new
